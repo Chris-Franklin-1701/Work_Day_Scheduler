@@ -1,6 +1,14 @@
 $(document).ready(function() {
-    $("#currentDay").text(moment().format('MMMM Do YYYY, h:mm:ss a'));
-
+    //makes a functioning clock for current time and date
+    function updateTime() {
+        var now = moment();
+        var exactTime = now.format("MMMM Do YYYY, h:mm:ss a");
+    
+        $("#currentDay").text(exactTime);
+    }
+    setInterval(updateTime, 1000);
+    
+// provides save button functionality, and localStorage access
     $(".saveBtn").on("click", function(){
         console.log(this);
         var text = $(this).siblings(".description").val();
@@ -19,7 +27,7 @@ $(document).ready(function() {
     $("#hour16 .description").val(localStorage.getItem("hour16"));
     $("#hour17 .description").val(localStorage.getItem("hour17"));
 
-
+// Sets (past, present, future) for time blocks
     function timeslotAvailabiltiy(){
         var hourCurrent = moment().hour();
         console.log(hourCurrent)
@@ -46,4 +54,6 @@ $(document).ready(function() {
     } 
     timeslotAvailabiltiy();
 })
+
+
 
