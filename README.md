@@ -9,6 +9,12 @@ This is a simple work day schedule, to keep track of appointments and time-block
 https://silversssc.github.io/Work_Day_Scheduler/
 
 
+##List of used technology:
+HTML5
+CSS
+JavaScript
+
+
 ## Installation
 
 Use git clone to clone this repository to your local drive
