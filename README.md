@@ -12,7 +12,8 @@ https://silversssc.github.io/Work_Day_Scheduler/
 ##List of used technology:
 HTML5
 CSS
-JavaScript
+BootStrap
+JQuery
 
 
 ## Installation
